@@ -1,0 +1,15 @@
+{
+  "proactive_alerts": true,
+  "alert_threshold": 3,
+  "periodic_reports": true,
+  "report_frequency": "weekly",
+  "track_patterns": {
+    "command_sequences": true,
+    "code_patterns": true,
+    "project_types": true,
+    "research_patterns": true
+  },
+  "auto_approve": false,
+  "last_analysis": null,
+  "last_report": null
+}

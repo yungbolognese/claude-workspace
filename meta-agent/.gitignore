@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Meta-Agent Runtime Data
+logs/*.jsonl
+logs/activity_index.json
+patterns/detected_patterns.json
+proposals/proposal_*.json
+proposals/approved/
+reports/weekly_*.md
+reports/cron.log
+
+# Keep directory structure
+!logs/.gitkeep
+!patterns/.gitkeep
+!proposals/.gitkeep
+!templates/.gitkeep
+!reports/.gitkeep
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Config (keep template, ignore runtime)
+config.json

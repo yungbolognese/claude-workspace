@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Meta-Agent Runtime Data
+meta-agent/logs/*.jsonl
+meta-agent/logs/activity_index.json
+meta-agent/patterns/detected_patterns.json
+meta-agent/proposals/proposal_*.json
+meta-agent/proposals/approved/
+meta-agent/reports/weekly_*.md
+meta-agent/config.json
+
+# Keep directory structure
+!meta-agent/logs/.gitkeep
+!meta-agent/patterns/.gitkeep
+!meta-agent/proposals/.gitkeep
+!meta-agent/templates/.gitkeep
+!meta-agent/reports/.gitkeep
+
+# Monitoring Logs
+monitoring/logs/
+!monitoring/logs/.gitkeep
+
+# Service Data
+services/ollama/models/
+services/pihole/data/
+services/syncthing/config/
+services/*/data/
+services/*/.env
+
+# Personal Notes (track separately if desired)
+docs/personal/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+*.bak
