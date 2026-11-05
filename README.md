@@ -38,6 +38,7 @@ claude-workspace/
 │   ├── ollama/         # Local LLM setup
 │   ├── syncthing/      # P2P file sync
 │   ├── pihole/         # Network ad blocking
+│   ├── dumbphone-gateway/  # SMS/voice access to smartphone-only services
 │   └── README.md       # Service documentation
 │
 ├── monitoring/          # Resource monitoring scripts

@@ -20,6 +20,9 @@ Self-hosted services running on Mac mini M4 for local-first development.
 ### Week 3+: TBD
 Based on discovery findings.
 
+### Projects
+- [ ] **Dumbphone Gateway**: Smartphone-only services (rideshare first) over SMS and voice calls (see [dumbphone-gateway/](dumbphone-gateway/))
+
 ## Service Template
 
 Each service directory contains:
@@ -40,6 +43,7 @@ Track each service's impact:
 | Ollama (7B) | ~6GB | 4GB | 0 | TBD | Testing |
 | Pi-hole | ~500MB | 100MB | Saves BW | TBD | Not Started |
 | Syncthing | ~200MB | Varies | P2P | TBD | Not Started |
+| Dumbphone Gateway | ~30MB | <10MB | Tiny (webhooks) | TBD | Built, not deployed |
 
 Update this table weekly during discovery phase.
 
