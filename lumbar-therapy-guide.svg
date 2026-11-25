@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1170" height="2532" viewBox="0 0 1170 2532" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0f9ff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff0d5;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffe0b5;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#6366f1" flood-opacity="0.15"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1170" height="2532" fill="url(#bgGradient)"/>
+  <circle cx="150" cy="150" r="120" fill="#dbeafe" opacity="0.4"/>
+  <circle cx="1020" cy="200" r="180" fill="#e0e7ff" opacity="0.3"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1170" height="240" fill="#6366f1" rx="0" ry="0"/>
+  <path d="M0 240 L1170 240" stroke="white" stroke-width="3"/>
+
+  <text x="585" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="900" fill="white" letter-spacing="-2">
+    Lumbar Spine Health
+  </text>
+  <text x="585" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" fill="#e0e7ff">
+    Physical Therapy Guide for Back Pain
+  </text>
+  <text x="585" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#c7d2fe">
+    Based on L4-L5 &amp; L5-S1 MRI Findings
+  </text>
+
+  <!-- Character Section (Annie Cho Style) -->
+  <g transform="translate(585, 380)">
+    <!-- Hair (blunt cut, side-swept bangs) -->
+    <path d="M-85 20 Q-100 -30 -70 -80 Q0 -110 70 -80 Q100 -30 85 20 L70 40 Q0 30 -70 40 Z" fill="url(#hairGradient)"/>
+    <path d="M-85 25 Q-120 60 -110 100 Q-90 130 -60 120 L-70 45 Z" fill="url(#hairGradient)" opacity="0.95"/>
+    <path d="M85 25 Q120 60 110 100 Q90 130 60 120 L70 45 Z" fill="url(#hairGradient)" opacity="0.95"/>
+
+    <!-- Hair bangs -->
+    <path d="M-60 -40 Q-40 -60 -20 -50 Q0 -70 20 -50 Q40 -60 60 -40 Q70 -20 60 0 Q40 10 20 0 Q0 10 -20 0 Q-40 10 -60 0 Q-70 -20 -60 -40" fill="url(#hairGradient)"/>
+    <path d="M-80 10 Q-60 30 -40 20 Q-20 40 0 30 Q20 40 40 20 Q60 30 80 10" fill="url(#hairGradient)" opacity="0.85"/>
+
+    <!-- Head shape -->
+    <ellipse cx="0" cy="40" rx="60" ry="70" fill="url(#skinGradient)" stroke="#fca5a5" stroke-width="3"/>
+
+    <!-- Eyes (large, almond-shaped with sparkle) -->
+    <g>
+      <!-- Left Eye -->
+      <path d="M-45 25 Q-25 15 -5 25 Q-5 50 -45 50 Z" fill="white" stroke="#1e293b" stroke-width="2.5"/>
+      <ellipse cx="-25" cy="35" rx="10" ry="12" fill="#3b82f6"/>
+      <circle cx="-28" cy="32" r="4" fill="white"/>
+      <circle cx="-22" cy="38" r="2" fill="white" opacity="0.7"/>
+      <path d="M-55 28 Q-45 10 -35 28" stroke="#1e293b" stroke-width="2.5" fill="none"/>
+      <path d="M-55 52 Q-45 70 -35 52" stroke="#1e293b" stroke-width="2.5" fill="none"/>
+
+      <!-- Right Eye -->
+      <path d="M5 25 Q25 15 45 25 Q45 50 5 50 Z" fill="white" stroke="#1e293b" stroke-width="2.5"/>
+      <ellipse cx="25" cy="35" rx="10" ry="12" fill="#3b82f6"/>
+      <circle cx="28" cy="32" r="4" fill="white"/>
+      <circle cx="22" cy="38" r="2" fill="white" opacity="0.7"/>
+      <path d="M35 28 Q45 10 55 28" stroke="#1e293b" stroke-width="2.5" fill="none"/>
+      <path d="M35 52 Q45 70 55 52" stroke="#1e293b" stroke-width="2.5" fill="none"/>
+    </g>
+
+    <!-- Eyebrows (soft, thin) -->
+    <path d="M-50 15 Q-25 10 0 15" stroke="#1e293b" stroke-width="2" fill="none"/>
+    <path d="M0 15 Q25 10 50 15" stroke="#1e293b" stroke-width="2" fill="none"/>
+
+    <!-- Nose (small dot) -->
+    <circle cx="0" cy="45" r="2" fill="#fca5a5" opacity="0.7"/>
+
+    <!-- Mouth (soft smile) -->
+    <path d="M-10 70 Q0 75 10 70" stroke="#ef4444" stroke-width="2.5" fill="none"/>
+    <path d="M-8 72 Q0 77 8 72" stroke="#fca5a5" stroke-width="1.5" fill="none"/>
+
+    <!-- Blush (soft oval) -->
+    <ellipse cx="-30" cy="50" rx="6" ry="3" fill="#fecaca" opacity="0.6"/>
+    <ellipse cx="30" cy="50" rx="6" ry="3" fill="#fecaca" opacity="0.6"/>
+
+    <!-- Body (simple anime style) -->
+    <path d="M-25 120 L25 120 L35 250 L-35 250 Z" fill="#3b82f6" stroke="#1e40af" stroke-width="3"/>
+    <!-- Neck -->
+    <rect x="-8" y="110" width="16" height="25" fill="url(#skinGradient)" stroke="#fca5a5" stroke-width="2"/>
+  </g>
+
+  <!-- Exercise Card 1 -->
+  <g transform="translate(65, 700)">
+    <rect width="1040" height="220" rx="24" fill="white" stroke="#bfdbfe" stroke-width="3" filter="url(#softShadow)"/>
+    <circle cx="120" cy="190" r="32" fill="#6366f1" filter="url(#glow)"/>
+    <text x="170" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1e293b">1. Pelvic Tilts</text>
+    <text x="170" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Lie on back, knees bent. Flatten lower back against floor.</text>
+    <text x="170" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Hold 5-10 sec. Repeat 10-15x.</text>
+    <text x="170" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#16a34a">Goal: Activate transverse abdominis</text>
+  </g>
+
+  <!-- Exercise Card 2 -->
+  <g transform="translate(65, 950)">
+    <rect width="1040" height="220" rx="24" fill="white" stroke="#bfdbfe" stroke-width="3" filter="url(#softShadow)"/>
+    <circle cx="120" cy="190" r="32" fill="#6366f1" filter="url(#glow)"/>
+    <text x="170" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1e293b">2. Bird Dog</text>
+    <text x="170" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">On hands/knees. Extend opposite arm &amp; leg.</text>
+    <text x="170" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Hold 5-10 sec. Switch sides. 10-12 reps.</text>
+    <text x="170" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#16a34a">Goal: Improve spinal stability</text>
+  </g>
+
+  <!-- Exercise Card 3 -->
+  <g transform="translate(65, 1200)">
+    <rect width="1040" height="220" rx="24" fill="white" stroke="#bfdbfe" stroke-width="3" filter="url(#softShadow)"/>
+    <circle cx="120" cy="190" r="32" fill="#6366f1" filter="url(#glow)"/>
+    <text x="170" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1e293b">3. Dead Bug</text>
+    <text x="170" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Lie on back, knees bent 90°. Extend opposite limb.</text>
+    <text x="170" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Keep back pressed. 10-12 reps per side.</text>
+    <text x="170" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#16a34a">Goal: Control lumbar extension</text>
+  </g>
+
+  <!-- Exercise Card 4 -->
+  <g transform="translate(65, 1450)">
+    <rect width="1040" height="220" rx="24" fill="white" stroke="#bfdbfe" stroke-width="3" filter="url(#softShadow)"/>
+    <circle cx="120" cy="190" r="32" fill="#6366f1" filter="url(#glow)"/>
+    <text x="170" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1e293b">4. Hip Flexor Stretch</text>
+    <text x="170" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Kneel one knee, foot forward. Push hips.</text>
+    <text x="170" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Hold 30 sec. 2-3 reps per side.</text>
+    <text x="170" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#16a34a">Goal: Release tight hip flexors</text>
+  </g>
+
+  <!-- Exercise Card 5 -->
+  <g transform="translate(65, 1700)">
+    <rect width="1040" height="220" rx="24" fill="white" stroke="#bfdbfe" stroke-width="3" filter="url(#softShadow)"/>
+    <circle cx="120" cy="190" r="32" fill="#6366f1" filter="url(#glow)"/>
+    <text x="170" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1e293b">5. Hamstring Stretch</text>
+    <text x="170" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Lie on back, loop towel. Straighten knee.</text>
+    <text x="170" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Hold 30 sec. 2-3 reps per side.</text>
+    <text x="170" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#16a34a">Goal: Increase hamstring flexibility</text>
+  </g>
+
+  <!-- Aerobic Exercise Card -->
+  <g transform="translate(65, 1950)">
+    <rect width="1040" height="180" rx="24" fill="white" stroke="#86efac" stroke-width="3" filter="url(#softShadow)"/>
+    <circle cx="120" cy="140" r="32" fill="#10b981" filter="url(#glow)"/>
+    <text x="170" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#1e293b">6. Low-Impact Aerobic Exercise</text>
+    <text x="170" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">Walking (15-20 min), Swimming, Stationary Cycling</text>
+    <text x="170" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#16a34a">Goal: 3-5 times per week consistency</text>
+  </g>
+
+  <!-- What to Avoid -->
+  <g transform="translate(65, 2220)">
+    <rect width="1040" height="150" rx="24" fill="#fef2f2" stroke="#fca5a5" stroke-width="3"/>
+    <circle cx="120" cy="100" r="32" fill="#ef4444" filter="url(#glow)"/>
+    <text x="170" y="85" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#991b1b">What to AVOID</text>
+    <text x="170" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#991b1b">Sit-ups/crunches - Heavy deadlifts - Twisting while bent</text>
+    <text x="170" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#991b1b">High-impact jumping - Stop if pain increases</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="2462" width="1170" height="70" fill="#6366f1"/>
+  <text x="585" y="2505" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#e0e7ff">
+    Consult your physician or physical therapist before starting exercises
+  </text>
+
+</svg>
